@@ -108,7 +108,7 @@ def benchmark_one_subject(subject_id, case):
     #~ r_peaks = detectors.wqrs_detector(raw_ecg)
     r_peaks = np.asarray(r_peaks)
     
-    parameters = physio.get_ecg_parameters('simple_ecg')
+    parameters = physio.get_ecg_parameters('shuman_ecg')
     #~ pprint(parameters)
     ecg, ecg_peaks = physio.compute_ecg(raw_ecg, srate, parameters=parameters)
 
